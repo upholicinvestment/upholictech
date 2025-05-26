@@ -1,0 +1,287 @@
+2025-05-25 23:13:47,852 - Main - INFO - Initializing BSE F&O Feed...
+2025-05-25 23:13:47,866 - BSEFNOFeed - INFO - Successfully connected to MongoDB
+2025-05-25 23:13:47,867 - BSEFNOFeed - INFO - Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-25 23:13:53,793 - BSEFNOFeed - INFO - Total instruments in master file: 184565
+2025-05-25 23:13:53,979 - BSEFNOFeed - INFO - Found 40898 BSE F&O instruments
+2025-05-25 23:13:54,850 - Main - INFO - Starting feed...
+2025-05-25 23:13:54,852 - BSEFNOFeed - INFO - Starting 5 feeds for 40898 instruments in batches
+2025-05-25 23:13:59,859 - BSEFNOFeed - INFO - All feed threads started. Monitoring...
+2025-05-25 23:13:59,860 - BSEFNOFeed - INFO - Active feed threads: 0/5
+2025-05-25 23:13:59,862 - BSEFNOFeed - ERROR - All feed threads have stopped!
+2025-05-25 23:19:16,051 - BSEFNOFeed - ERROR - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 683358162f4109b2a97d3f6a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms)')>]>
+2025-05-25 23:19:16,055 - root - ERROR - Failed to start BSE F&O feed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 683358162f4109b2a97d3f6a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms)')>]>
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 205, in <module>
+    feed = BSEFNOFeed()
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 37, in __init__
+    self.mongo_client.server_info()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2290, in server_info
+    self.admin.command(
+    ~~~~~~~~~~~~~~~~~~^
+        "buildinfo", read_preference=ReadPreference.PRIMARY, session=session
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\database.py", line 926, in command
+    with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1864, in _conn_for_reads
+    server = self._select_server(read_preference, session, operation)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1812, in _select_server
+    server = topology.select_server(
+        server_selector,
+    ...<2 lines>...
+        operation_id=operation_id,
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 409, in select_server
+    server = self._select_server(
+        selector,
+    ...<4 lines>...
+        operation_id=operation_id,
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 387, in _select_server
+    servers = self.select_servers(
+        selector, operation, server_selection_timeout, address, operation_id
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+        selector, server_timeout, operation, operation_id, address
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+        f"{self._error_message(selector)}, Timeout: {timeout}s, Topology Description: {self.description!r}"
+    )
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 683358162f4109b2a97d3f6a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms)')>]>
+2025-05-25 23:22:33,966 - BSEEquityFeed - INFO - Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-25 23:22:40,261 - BSEEquityFeed - INFO - Total instruments in master file: 184565
+2025-05-25 23:22:40,356 - BSEEquityFeed - ERROR - Error fetching BSE F&O list: time data "2025-05-27 15:30:00" doesn't match format "%d-%b-%Y", at position 0. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 67, in _fetch_all_bse_fno_instruments
+    fno_df['expiry_date'] = pd.to_datetime(fno_df['SEM_EXPIRY_DATE'], format='%d-%b-%Y')
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\tools\datetimes.py", line 1063, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\tools\datetimes.py", line 247, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\tools\datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\tools\datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2025-05-27 15:30:00" doesn't match format "%d-%b-%Y", at position 0. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2025-05-25 23:22:40,441 - BSEEquityFeed - ERROR - No BSE F&O instruments available to start feed
+2025-05-25 23:25:35,772 - BSEFNOFeed - INFO - Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-25 23:25:41,674 - BSEFNOFeed - INFO - Total instruments in master file: 184565
+2025-05-25 23:25:41,806 - BSEFNOFeed - INFO - Found 40898 BSE F&O instruments
+2025-05-25 23:25:43,205 - BSEFNOFeed - INFO - Starting 5 feeds for 250 instruments
+2025-05-25 23:25:43,207 - BSEFNOFeed - INFO - Starting feed for batch with 50 instruments
+2025-05-25 23:25:43,207 - BSEFNOFeed - ERROR - Failed to initialize feed: There is no current event loop in thread 'BSEFNO-Batch-0'.
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 138, in _run_batch_feed
+    feed = marketfeed.DhanFeed(
+        self.client_id,
+    ...<2 lines>...
+        "v2"
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\dhanhq\marketfeed.py", line 48, in __init__
+    self.loop = asyncio.get_event_loop()
+                ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 716, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'BSEFNO-Batch-0'.
+2025-05-25 23:25:44,217 - BSEFNOFeed - INFO - Starting feed for batch with 50 instruments
+2025-05-25 23:25:44,218 - BSEFNOFeed - ERROR - Failed to initialize feed: There is no current event loop in thread 'BSEFNO-Batch-1'.
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 138, in _run_batch_feed
+    feed = marketfeed.DhanFeed(
+        self.client_id,
+    ...<2 lines>...
+        "v2"
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\dhanhq\marketfeed.py", line 48, in __init__
+    self.loop = asyncio.get_event_loop()
+                ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 716, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'BSEFNO-Batch-1'.
+2025-05-25 23:25:45,287 - BSEFNOFeed - INFO - Starting feed for batch with 50 instruments
+2025-05-25 23:25:45,316 - BSEFNOFeed - ERROR - Failed to initialize feed: There is no current event loop in thread 'BSEFNO-Batch-2'.
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 138, in _run_batch_feed
+    feed = marketfeed.DhanFeed(
+        self.client_id,
+    ...<2 lines>...
+        "v2"
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\dhanhq\marketfeed.py", line 48, in __init__
+    self.loop = asyncio.get_event_loop()
+                ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 716, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'BSEFNO-Batch-2'.
+2025-05-25 23:25:46,292 - BSEFNOFeed - INFO - Starting feed for batch with 50 instruments
+2025-05-25 23:25:46,293 - BSEFNOFeed - ERROR - Failed to initialize feed: There is no current event loop in thread 'BSEFNO-Batch-3'.
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 138, in _run_batch_feed
+    feed = marketfeed.DhanFeed(
+        self.client_id,
+    ...<2 lines>...
+        "v2"
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\dhanhq\marketfeed.py", line 48, in __init__
+    self.loop = asyncio.get_event_loop()
+                ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 716, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'BSEFNO-Batch-3'.
+2025-05-25 23:25:47,294 - BSEFNOFeed - INFO - Starting feed for batch with 50 instruments
+2025-05-25 23:25:47,295 - BSEFNOFeed - ERROR - Failed to initialize feed: There is no current event loop in thread 'BSEFNO-Batch-4'.
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 138, in _run_batch_feed
+    feed = marketfeed.DhanFeed(
+        self.client_id,
+    ...<2 lines>...
+        "v2"
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\dhanhq\marketfeed.py", line 48, in __init__
+    self.loop = asyncio.get_event_loop()
+                ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 716, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'BSEFNO-Batch-4'.
+2025-05-25 23:26:48,295 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:27:48,297 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:28:48,299 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:29:48,300 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:30:48,302 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:31:48,303 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:32:48,307 - BSEFNOFeed - INFO - BSE F&O feed monitor running...
+2025-05-25 23:33:44,868 - BSEFNOFeed - INFO - Received keyboard interrupt. Shutting down...
+2025-05-25 23:36:24,650 - BSEFNOFeed - ERROR - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68335c1bf889583f80d5c971, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms)')>]>
+2025-05-25 23:36:24,652 - root - ERROR - Fatal error: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68335c1bf889583f80d5c971, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms)')>]>
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 216, in <module>
+    feed = BSEFNOFeed()
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 38, in __init__
+    self.mongo_client.server_info()  # Test connection
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2290, in server_info
+    self.admin.command(
+    ~~~~~~~~~~~~~~~~~~^
+        "buildinfo", read_preference=ReadPreference.PRIMARY, session=session
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\database.py", line 926, in command
+    with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1864, in _conn_for_reads
+    server = self._select_server(read_preference, session, operation)
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1812, in _select_server
+    server = topology.select_server(
+        server_selector,
+    ...<2 lines>...
+        operation_id=operation_id,
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 409, in select_server
+    server = self._select_server(
+        selector,
+    ...<4 lines>...
+        operation_id=operation_id,
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 387, in _select_server
+    servers = self.select_servers(
+        selector, operation, server_selection_timeout, address, operation_id
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+        selector, server_timeout, operation, operation_id, address
+    )
+  File "C:\Users\bdeep\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\synchronous\topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+        f"{self._error_message(selector)}, Timeout: {timeout}s, Topology Description: {self.description!r}"
+    )
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68335c1bf889583f80d5c971, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 30000.0ms, connectTimeoutMS: 30000.0ms)')>]>
+2025-05-25 23:37:30,575 - BSEFNOFeed - INFO - Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-25 23:37:36,785 - BSEFNOFeed - INFO - Total instruments in master file: 184565
+2025-05-25 23:37:36,916 - BSEFNOFeed - INFO - Found 40898 BSE F&O instruments
+2025-05-25 23:37:37,926 - BSEFNOFeed - INFO - Starting 5 feeds for 250 instruments
+2025-05-25 23:37:37,928 - root - ERROR - Fatal error: 'module' object is not callable. Did you mean: 'time.time(...)'?
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 203, in <module>
+    feed.start_feed()
+    ~~~~~~~~~~~~~~~^^
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 115, in start_feed
+    if self.is_market_open():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 95, in is_market_open
+    return time(9, 15) <= now <= time(15, 30)
+           ~~~~^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'time.time(...)'?
+2025-05-26 09:48:57,618 - BSEFNOFeed - INFO - Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 09:49:00,176 - BSEFNOFeed - INFO - Total instruments in master file: 184565
+2025-05-26 09:49:00,348 - BSEFNOFeed - INFO - Found 40898 BSE F&O instruments
+2025-05-26 09:49:01,269 - BSEFNOFeed - INFO - Starting 5 feeds for 250 instruments
+2025-05-26 09:49:01,271 - root - ERROR - Fatal error: 'module' object is not callable. Did you mean: 'time.time(...)'?
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 203, in <module>
+    feed.start_feed()
+    ~~~~~~~~~~~~~~~^^
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 115, in start_feed
+    if self.is_market_open():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 95, in is_market_open
+    return time(9, 15) <= now <= time(15, 30)
+           ~~~~^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'time.time(...)'?
+2025-05-26 09:51:23,369 - BSEFNOFeed - INFO - Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 09:51:26,046 - BSEFNOFeed - INFO - Total instruments in master file: 184565
+2025-05-26 09:51:26,159 - BSEFNOFeed - INFO - Found 40898 BSE F&O instruments
+2025-05-26 09:51:27,056 - BSEFNOFeed - INFO - Starting 5 feeds for 250 instruments
+2025-05-26 09:51:27,057 - root - ERROR - Fatal error: 'module' object is not callable. Did you mean: 'time.time(...)'?
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 233, in <module>
+    feed.start_feed()
+    ~~~~~~~~~~~~~~~^^
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 117, in start_feed
+    if self.is_market_open():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 95, in is_market_open
+    market_open = time(9, 15)
+TypeError: 'module' object is not callable. Did you mean: 'time.time(...)'?
+2025-05-26 12:46:42 [INFO] Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 12:46:44 [INFO] Found 40898 BSE F&O instruments
+2025-05-26 12:46:49 [INFO] 
+Interrupted by user. Shutting down gracefully...
+2025-05-26 12:46:49 [INFO] MongoDB connection closed
+2025-05-26 12:46:49 [INFO] Application shutdown complete
+2025-05-26 12:47:18 [INFO] Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 12:47:21 [INFO] Found 40898 BSE F&O instruments
+2025-05-26 12:47:23 [INFO] 
+Interrupted by user. Shutting down gracefully...
+2025-05-26 12:47:23 [INFO] MongoDB connection closed
+2025-05-26 12:47:23 [INFO] Application shutdown complete
+2025-05-26 13:03:29 [INFO] Fetching all BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 13:03:32 [INFO] Found 40898 BSE F&O instruments
+2025-05-26 13:03:34 [INFO] Shutting down gracefully...
+2025-05-26 13:03:34 [INFO] MongoDB connection closed
+2025-05-26 13:03:34 [INFO] Application shutdown complete

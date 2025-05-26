@@ -1,0 +1,5 @@
+# Set-Content -Path python-service/requirements.txt -Value @"
+requests
+pymongo
+python-dotenv
+# "@

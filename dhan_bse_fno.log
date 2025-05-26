@@ -1,0 +1,19 @@
+2025-05-26 11:50:31,196 - DhanBSEFNOFeed - INFO - Fetching BSE F&O instruments from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 11:50:33,877 - DhanBSEFNOFeed - INFO - Found 0 active BSE F&O instruments
+2025-05-26 11:50:33,909 - DhanBSEFNOFeed - INFO - Dhan BSE F&O Market Feed initialized
+2025-05-26 11:50:33,909 - DhanBSEFNOFeed - INFO - Starting Dhan BSE F&O Market Feed
+2025-05-26 11:50:33,910 - DhanBSEFNOFeed - INFO - Total instruments available: 0
+2025-05-26 11:50:33,910 - DhanBSEFNOFeed - INFO - Current time: 2025-05-26 11:50:33
+2025-05-26 11:50:33,911 - DhanBSEFNOFeed - INFO - Starting new data collection cycle
+2025-05-26 11:50:33,911 - DhanBSEFNOFeed - WARNING - No instruments available - using fallback
+2025-05-26 11:50:33,912 - DhanBSEFNOFeed - INFO - Subscribing to 2 instruments
+2025-05-26 11:50:33,913 - DhanBSEFNOFeed - ERROR - Error during data collection: DhanFeed.__init__() got an unexpected keyword argument 'on_open'
+Traceback (most recent call last):
+  File "d:\upholic_tech\backend\pythontwo\app\instruments\bse_fno.py", line 210, in run_data_collection_cycle
+    feed = marketfeed.DhanFeed(
+        self.client_id,
+    ...<5 lines>...
+        on_error=on_error
+    )
+TypeError: DhanFeed.__init__() got an unexpected keyword argument 'on_open'
+2025-05-26 11:50:33,915 - DhanBSEFNOFeed - INFO - Cycle completed. Stored data for 0 instruments

@@ -1,0 +1,12 @@
+2025-05-15 11:43:21,670 - MainProcess - INFO - Starting market monitoring system
+2025-05-15 11:43:21,736 - MainProcess - INFO - Started process: DhanClient (PID: 20620)
+2025-05-15 11:43:21,748 - MainProcess - INFO - Started process: PriceScroll (PID: 16624)
+2025-05-15 11:43:21,759 - MainProcess - INFO - Started process: AdvanceDecline (PID: 4904)
+2025-05-15 11:43:21,773 - MainProcess - INFO - Started process: LogListener (PID: 20292)
+2025-05-15 11:43:26,774 - MainProcess - ERROR - Process AdvanceDecline died, restarting...
+2025-05-15 12:33:28,156 - MainProcess - INFO - Shutdown signal received
+2025-05-15 12:33:28,163 - MainProcess - INFO - Shutting down services...
+2025-05-15 12:33:28,232 - MainProcess - INFO - All services stopped
+2025-05-15 12:39:51,821 - MainProcess - INFO - Shutdown signal received
+2025-05-15 12:39:51,828 - MainProcess - INFO - Shutting down services...
+2025-05-15 12:39:51,997 - MainProcess - INFO - All services stopped

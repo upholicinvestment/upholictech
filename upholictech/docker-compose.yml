@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  # MongoDB Service
+  mongodb:
+    image: mongo:6.0
+    container_name: upholic_mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: upholic_db
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - upholic_network
+
+  # Node.js Backend Service
+  node_backend:
+    build:
+      context: ./backend/nodejs
+      dockerfile: Dockerfile
+    container_name: upholic_node
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - MONGO_URI=mongodb://root:example@mongodb:27017/upholic_db?authSource=admin
+      - PORT=3001
+      - JWT_SECRET=your-secret-key
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - upholic_network
+    restart: unless-stopped
+
+  # Python Backend Service
+  python_backend:
+    build:
+      context: ./backend/python
+      dockerfile: Dockerfile
+    container_name: upholic_python
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://root:example@mongodb:27017/upholic_db?authSource=admin
+      - DHAN_API_URL=https://api.dhan.co
+      - DHAN_API_KEY=your_dhan_api_key
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - upholic_network
+    restart: unless-stopped
+
+# Volumes and Networks
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  upholic_network:
+    driver: bridge

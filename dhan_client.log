@@ -1,0 +1,12 @@
+2025-05-21 12:18:23,511 - INFO - Starting DhanHQ Market Data Collection System
+2025-05-21 12:18:27,115 - INFO - Total NSE Equity stocks: 2550
+2025-05-21 12:18:27,117 - INFO - Starting new data collection cycle
+2025-05-21 12:18:31,212 - INFO - Connected to WebSocket. Receiving data...
+2025-05-21 12:18:31,379 - ERROR - Error during data collection: no close frame received or sent
+2025-05-21 12:18:31,383 - INFO - Connection closed for this cycle
+2025-05-21 12:19:18,031 - INFO - Starting DhanHQ Market Data Collection System
+2025-05-21 12:19:20,419 - INFO - Total NSE Equity stocks: 2550
+2025-05-21 12:19:20,421 - INFO - Starting new data collection cycle
+2025-05-21 12:19:23,030 - INFO - Connected to WebSocket. Receiving data...
+2025-05-21 12:20:33,320 - ERROR - Error during data collection: no close frame received or sent
+2025-05-21 12:20:33,323 - INFO - Connection closed for this cycle

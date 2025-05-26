@@ -1,0 +1,18 @@
+2025-05-14 16:47:08,082 - INFO - Started DhanClient service (PID: 17936)
+2025-05-14 16:47:09,111 - INFO - Started PriceScroll service (PID: 15428)
+2025-05-14 16:47:10,134 - INFO - Started AdvanceDecline service (PID: 12636)
+2025-05-14 16:47:13,862 - INFO - 
+Shutting down services gracefully...
+2025-05-14 16:47:13,863 - INFO - Terminated DhanClient (PID: 17936)
+2025-05-14 16:47:13,866 - INFO - Terminated PriceScroll (PID: 15428)
+2025-05-14 16:47:13,869 - INFO - Terminated AdvanceDecline (PID: 12636)
+2025-05-14 16:47:13,931 - INFO - All services stopped
+2025-05-14 16:48:52,033 - INFO - Started DhanClient service (PID: 20208)
+2025-05-14 16:48:53,053 - INFO - Started PriceScroll service (PID: 14496)
+2025-05-14 16:48:54,072 - INFO - Started AdvanceDecline service (PID: 18088)
+2025-05-14 16:48:58,258 - INFO - 
+Shutting down services gracefully...
+2025-05-14 16:48:58,260 - INFO - Terminated DhanClient (PID: 20208)
+2025-05-14 16:48:58,265 - INFO - Terminated PriceScroll (PID: 14496)
+2025-05-14 16:48:58,267 - INFO - Terminated AdvanceDecline (PID: 18088)
+2025-05-14 16:48:58,347 - INFO - All services stopped

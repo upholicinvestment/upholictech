@@ -1,0 +1,201 @@
+2025-05-25 23:48:04,904 - BSEIndexFeed - INFO - MongoDB connection established successfully
+2025-05-25 23:48:04,905 - BSEIndexFeed - INFO - Fetching all BSE indices from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-25 23:48:10,945 - BSEIndexFeed - INFO - Found 60 BSE indices
+2025-05-25 23:48:10,947 - BSEIndexFeed - INFO - Index found: 2 - BSEDSI
+2025-05-25 23:48:10,950 - BSEIndexFeed - INFO - Index found: 23 - BSELVI
+2025-05-25 23:48:10,952 - BSEIndexFeed - INFO - Index found: 301 - BHRT22
+2025-05-25 23:48:10,954 - BSEIndexFeed - INFO - Index found: 302 - GREENX
+2025-05-25 23:48:10,957 - BSEIndexFeed - INFO - Index found: 303 - BSEIPO
+2025-05-25 23:48:10,958 - BSEIndexFeed - INFO - Index found: 304 - SMEIPO
+2025-05-25 23:48:10,960 - BSEIndexFeed - INFO - Index found: 305 - CARBON
+2025-05-25 23:48:10,961 - BSEIndexFeed - INFO - Index found: 307 - DFRGRI
+2025-05-25 23:48:10,965 - BSEIndexFeed - INFO - Index found: 309 - SML250
+2025-05-25 23:48:10,970 - BSEIndexFeed - INFO - Index found: 310 - SNXT50
+2025-05-25 23:48:10,978 - BSEIndexFeed - INFO - Index found: 36 - BSEMOI
+2025-05-25 23:48:10,980 - BSEIndexFeed - INFO - Index found: 4 - BSEEVI
+2025-05-25 23:48:10,989 - BSEIndexFeed - INFO - Index found: 51 - SENSEX
+2025-05-25 23:48:10,991 - BSEIndexFeed - INFO - Index found: 52 - BSEPBI
+2025-05-25 23:48:10,993 - BSEIndexFeed - INFO - Index found: 53 - ESG100
+2025-05-25 23:48:10,994 - BSEIndexFeed - INFO - Index found: 54 - LCTMCI
+2025-05-25 23:48:11,005 - BSEIndexFeed - INFO - Index found: 55 - LMI250
+2025-05-25 23:48:11,060 - BSEIndexFeed - INFO - Index found: 56 - MID150
+2025-05-25 23:48:11,062 - BSEIndexFeed - INFO - Index found: 57 - MSL400
+2025-05-25 23:48:11,110 - BSEIndexFeed - INFO - Index found: 600 - USDINR
+2025-05-25 23:48:11,160 - BSEIndexFeed - INFO - Index found: 601 - GBPINR
+2025-05-25 23:48:11,172 - BSEIndexFeed - INFO - Index found: 602 - EURINR
+2025-05-25 23:48:11,173 - BSEIndexFeed - INFO - Index found: 603 - JPYINR
+2025-05-25 23:48:11,175 - BSEIndexFeed - INFO - Index found: 623 - USDJPY
+2025-05-25 23:48:11,194 - BSEIndexFeed - INFO - Index found: 624 - GBPUSD
+2025-05-25 23:48:11,220 - BSEIndexFeed - INFO - Index found: 625 - EURUSD
+2025-05-25 23:48:11,252 - BSEIndexFeed - INFO - Index found: 64 - MIDCAP
+2025-05-25 23:48:11,273 - BSEIndexFeed - INFO - Index found: 65 - BSE100
+2025-05-25 23:48:11,276 - BSEIndexFeed - INFO - Index found: 66 - BSE200
+2025-05-25 23:48:11,280 - BSEIndexFeed - INFO - Index found: 67 - BSE500
+2025-05-25 23:48:11,286 - BSEIndexFeed - INFO - Index found: 68 - AUTO
+2025-05-25 23:48:11,289 - BSEIndexFeed - INFO - Index found: 69 - BANKEX
+2025-05-25 23:48:11,326 - BSEIndexFeed - INFO - Index found: 70 - BSE CD
+2025-05-25 23:48:11,329 - BSEIndexFeed - INFO - Index found: 71 - BSE CG
+2025-05-25 23:48:11,330 - BSEIndexFeed - INFO - Index found: 72 - BSEFMC
+2025-05-25 23:48:11,330 - BSEIndexFeed - INFO - Index found: 73 - BSE HC
+2025-05-25 23:48:11,331 - BSEIndexFeed - INFO - Index found: 74 - BSE IT
+2025-05-25 23:48:11,335 - BSEIndexFeed - INFO - Index found: 75 - METAL
+2025-05-25 23:48:11,338 - BSEIndexFeed - INFO - Index found: 76 - OILGAS
+2025-05-25 23:48:11,340 - BSEIndexFeed - INFO - Index found: 77 - POWER
+2025-05-25 23:48:11,341 - BSEIndexFeed - INFO - Index found: 78 - BSEPSU
+2025-05-25 23:48:11,344 - BSEIndexFeed - INFO - Index found: 79 - REALTY
+2025-05-25 23:48:11,345 - BSEIndexFeed - INFO - Index found: 80 - TECK
+2025-05-25 23:48:11,346 - BSEIndexFeed - INFO - Index found: 81 - BSEQUI
+2025-05-25 23:48:11,347 - BSEIndexFeed - INFO - Index found: 82 - SMLCAP
+2025-05-25 23:48:11,348 - BSEIndexFeed - INFO - Index found: 83 - SENSEX50
+2025-05-25 23:48:11,350 - BSEIndexFeed - INFO - Index found: 84 - ALLCAP
+2025-05-25 23:48:11,352 - BSEIndexFeed - INFO - Index found: 85 - INFRA
+2025-05-25 23:48:11,354 - BSEIndexFeed - INFO - Index found: 86 - CPSE
+2025-05-25 23:48:11,360 - BSEIndexFeed - INFO - Index found: 87 - MFG
+2025-05-25 23:48:11,362 - BSEIndexFeed - INFO - Index found: 88 - UTILS
+2025-05-25 23:48:11,368 - BSEIndexFeed - INFO - Index found: 89 - TELCOM
+2025-05-25 23:48:11,375 - BSEIndexFeed - INFO - Index found: 90 - SMLSEL
+2025-05-25 23:48:11,376 - BSEIndexFeed - INFO - Index found: 91 - BASMTR
+2025-05-25 23:48:11,378 - BSEIndexFeed - INFO - Index found: 92 - ENERGY
+2025-05-25 23:48:11,378 - BSEIndexFeed - INFO - Index found: 93 - FIN
+2025-05-25 23:48:11,379 - BSEIndexFeed - INFO - Index found: 94 - LRGCAP
+2025-05-25 23:48:11,390 - BSEIndexFeed - INFO - Index found: 95 - MIDSEL
+2025-05-25 23:48:11,394 - BSEIndexFeed - INFO - Index found: 96 - CDGS
+2025-05-25 23:48:11,395 - BSEIndexFeed - INFO - Index found: 97 - INDSTR
+2025-05-25 23:48:11,458 - BSEIndexFeed - INFO - Starting BSE Index Feed for 60 indices
+2025-05-25 23:48:11,461 - BSEIndexFeed - INFO - Connecting to BSE Index WebSocket...
+2025-05-25 23:48:24,947 - BSEIndexFeed - INFO - Shutting down by user request
+2025-05-25 23:48:24,951 - BSEIndexFeed - INFO - BSE Index Feed stopped
+2025-05-26 09:49:39,734 - BSEIndexFeed - INFO - MongoDB connection established successfully
+2025-05-26 09:49:39,736 - BSEIndexFeed - INFO - Fetching all BSE indices from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 09:49:42,445 - BSEIndexFeed - INFO - Found 60 BSE indices
+2025-05-26 09:49:42,446 - BSEIndexFeed - INFO - Index found: 2 - BSEDSI
+2025-05-26 09:49:42,447 - BSEIndexFeed - INFO - Index found: 23 - BSELVI
+2025-05-26 09:49:42,448 - BSEIndexFeed - INFO - Index found: 301 - BHRT22
+2025-05-26 09:49:42,449 - BSEIndexFeed - INFO - Index found: 302 - GREENX
+2025-05-26 09:49:42,450 - BSEIndexFeed - INFO - Index found: 303 - BSEIPO
+2025-05-26 09:49:42,450 - BSEIndexFeed - INFO - Index found: 304 - SMEIPO
+2025-05-26 09:49:42,452 - BSEIndexFeed - INFO - Index found: 305 - CARBON
+2025-05-26 09:49:42,453 - BSEIndexFeed - INFO - Index found: 307 - DFRGRI
+2025-05-26 09:49:42,454 - BSEIndexFeed - INFO - Index found: 309 - SML250
+2025-05-26 09:49:42,456 - BSEIndexFeed - INFO - Index found: 310 - SNXT50
+2025-05-26 09:49:42,458 - BSEIndexFeed - INFO - Index found: 36 - BSEMOI
+2025-05-26 09:49:42,459 - BSEIndexFeed - INFO - Index found: 4 - BSEEVI
+2025-05-26 09:49:42,460 - BSEIndexFeed - INFO - Index found: 51 - SENSEX
+2025-05-26 09:49:42,461 - BSEIndexFeed - INFO - Index found: 52 - BSEPBI
+2025-05-26 09:49:42,463 - BSEIndexFeed - INFO - Index found: 53 - ESG100
+2025-05-26 09:49:42,467 - BSEIndexFeed - INFO - Index found: 54 - LCTMCI
+2025-05-26 09:49:42,469 - BSEIndexFeed - INFO - Index found: 55 - LMI250
+2025-05-26 09:49:42,469 - BSEIndexFeed - INFO - Index found: 56 - MID150
+2025-05-26 09:49:42,470 - BSEIndexFeed - INFO - Index found: 57 - MSL400
+2025-05-26 09:49:42,471 - BSEIndexFeed - INFO - Index found: 600 - USDINR
+2025-05-26 09:49:42,476 - BSEIndexFeed - INFO - Index found: 601 - GBPINR
+2025-05-26 09:49:42,478 - BSEIndexFeed - INFO - Index found: 602 - EURINR
+2025-05-26 09:49:42,479 - BSEIndexFeed - INFO - Index found: 603 - JPYINR
+2025-05-26 09:49:42,479 - BSEIndexFeed - INFO - Index found: 623 - USDJPY
+2025-05-26 09:49:42,480 - BSEIndexFeed - INFO - Index found: 624 - GBPUSD
+2025-05-26 09:49:42,481 - BSEIndexFeed - INFO - Index found: 625 - EURUSD
+2025-05-26 09:49:42,483 - BSEIndexFeed - INFO - Index found: 64 - MIDCAP
+2025-05-26 09:49:42,484 - BSEIndexFeed - INFO - Index found: 65 - BSE100
+2025-05-26 09:49:42,485 - BSEIndexFeed - INFO - Index found: 66 - BSE200
+2025-05-26 09:49:42,486 - BSEIndexFeed - INFO - Index found: 67 - BSE500
+2025-05-26 09:49:42,492 - BSEIndexFeed - INFO - Index found: 68 - AUTO
+2025-05-26 09:49:42,495 - BSEIndexFeed - INFO - Index found: 69 - BANKEX
+2025-05-26 09:49:42,496 - BSEIndexFeed - INFO - Index found: 70 - BSE CD
+2025-05-26 09:49:42,497 - BSEIndexFeed - INFO - Index found: 71 - BSE CG
+2025-05-26 09:49:42,497 - BSEIndexFeed - INFO - Index found: 72 - BSEFMC
+2025-05-26 09:49:42,498 - BSEIndexFeed - INFO - Index found: 73 - BSE HC
+2025-05-26 09:49:42,498 - BSEIndexFeed - INFO - Index found: 74 - BSE IT
+2025-05-26 09:49:42,499 - BSEIndexFeed - INFO - Index found: 75 - METAL
+2025-05-26 09:49:42,500 - BSEIndexFeed - INFO - Index found: 76 - OILGAS
+2025-05-26 09:49:42,500 - BSEIndexFeed - INFO - Index found: 77 - POWER
+2025-05-26 09:49:42,502 - BSEIndexFeed - INFO - Index found: 78 - BSEPSU
+2025-05-26 09:49:42,503 - BSEIndexFeed - INFO - Index found: 79 - REALTY
+2025-05-26 09:49:42,504 - BSEIndexFeed - INFO - Index found: 80 - TECK
+2025-05-26 09:49:42,505 - BSEIndexFeed - INFO - Index found: 81 - BSEQUI
+2025-05-26 09:49:42,511 - BSEIndexFeed - INFO - Index found: 82 - SMLCAP
+2025-05-26 09:49:42,512 - BSEIndexFeed - INFO - Index found: 83 - SENSEX50
+2025-05-26 09:49:42,513 - BSEIndexFeed - INFO - Index found: 84 - ALLCAP
+2025-05-26 09:49:42,514 - BSEIndexFeed - INFO - Index found: 85 - INFRA
+2025-05-26 09:49:42,515 - BSEIndexFeed - INFO - Index found: 86 - CPSE
+2025-05-26 09:49:42,515 - BSEIndexFeed - INFO - Index found: 87 - MFG
+2025-05-26 09:49:42,516 - BSEIndexFeed - INFO - Index found: 88 - UTILS
+2025-05-26 09:49:42,516 - BSEIndexFeed - INFO - Index found: 89 - TELCOM
+2025-05-26 09:49:42,518 - BSEIndexFeed - INFO - Index found: 90 - SMLSEL
+2025-05-26 09:49:42,519 - BSEIndexFeed - INFO - Index found: 91 - BASMTR
+2025-05-26 09:49:42,520 - BSEIndexFeed - INFO - Index found: 92 - ENERGY
+2025-05-26 09:49:42,526 - BSEIndexFeed - INFO - Index found: 93 - FIN
+2025-05-26 09:49:42,528 - BSEIndexFeed - INFO - Index found: 94 - LRGCAP
+2025-05-26 09:49:42,529 - BSEIndexFeed - INFO - Index found: 95 - MIDSEL
+2025-05-26 09:49:42,530 - BSEIndexFeed - INFO - Index found: 96 - CDGS
+2025-05-26 09:49:42,531 - BSEIndexFeed - INFO - Index found: 97 - INDSTR
+2025-05-26 09:49:42,579 - BSEIndexFeed - INFO - Starting BSE Index Feed for 60 indices
+2025-05-26 09:49:42,583 - BSEIndexFeed - INFO - Connecting to BSE Index WebSocket...
+2025-05-26 09:51:17,556 - BSEIndexFeed - INFO - Shutting down by user request
+2025-05-26 09:51:17,560 - BSEIndexFeed - INFO - BSE Index Feed stopped
+2025-05-26 14:46:08,228 - BSEIndexFeed - INFO - MongoDB connection established successfully
+2025-05-26 14:46:08,229 - BSEIndexFeed - INFO - Fetching all BSE indices from: https://images.dhan.co/api-data/api-scrip-master.csv
+2025-05-26 14:46:10,689 - BSEIndexFeed - INFO - Found 60 BSE indices
+2025-05-26 14:46:10,690 - BSEIndexFeed - INFO - Index found: 2 - BSEDSI
+2025-05-26 14:46:10,690 - BSEIndexFeed - INFO - Index found: 23 - BSELVI
+2025-05-26 14:46:10,691 - BSEIndexFeed - INFO - Index found: 301 - BHRT22
+2025-05-26 14:46:10,691 - BSEIndexFeed - INFO - Index found: 302 - GREENX
+2025-05-26 14:46:10,691 - BSEIndexFeed - INFO - Index found: 303 - BSEIPO
+2025-05-26 14:46:10,692 - BSEIndexFeed - INFO - Index found: 304 - SMEIPO
+2025-05-26 14:46:10,692 - BSEIndexFeed - INFO - Index found: 305 - CARBON
+2025-05-26 14:46:10,692 - BSEIndexFeed - INFO - Index found: 307 - DFRGRI
+2025-05-26 14:46:10,693 - BSEIndexFeed - INFO - Index found: 309 - SML250
+2025-05-26 14:46:10,693 - BSEIndexFeed - INFO - Index found: 310 - SNXT50
+2025-05-26 14:46:10,693 - BSEIndexFeed - INFO - Index found: 36 - BSEMOI
+2025-05-26 14:46:10,694 - BSEIndexFeed - INFO - Index found: 4 - BSEEVI
+2025-05-26 14:46:10,694 - BSEIndexFeed - INFO - Index found: 51 - SENSEX
+2025-05-26 14:46:10,694 - BSEIndexFeed - INFO - Index found: 52 - BSEPBI
+2025-05-26 14:46:10,695 - BSEIndexFeed - INFO - Index found: 53 - ESG100
+2025-05-26 14:46:10,695 - BSEIndexFeed - INFO - Index found: 54 - LCTMCI
+2025-05-26 14:46:10,696 - BSEIndexFeed - INFO - Index found: 55 - LMI250
+2025-05-26 14:46:10,696 - BSEIndexFeed - INFO - Index found: 56 - MID150
+2025-05-26 14:46:10,697 - BSEIndexFeed - INFO - Index found: 57 - MSL400
+2025-05-26 14:46:10,697 - BSEIndexFeed - INFO - Index found: 600 - USDINR
+2025-05-26 14:46:10,698 - BSEIndexFeed - INFO - Index found: 601 - GBPINR
+2025-05-26 14:46:10,698 - BSEIndexFeed - INFO - Index found: 602 - EURINR
+2025-05-26 14:46:10,699 - BSEIndexFeed - INFO - Index found: 603 - JPYINR
+2025-05-26 14:46:10,699 - BSEIndexFeed - INFO - Index found: 623 - USDJPY
+2025-05-26 14:46:10,700 - BSEIndexFeed - INFO - Index found: 624 - GBPUSD
+2025-05-26 14:46:10,701 - BSEIndexFeed - INFO - Index found: 625 - EURUSD
+2025-05-26 14:46:10,701 - BSEIndexFeed - INFO - Index found: 64 - MIDCAP
+2025-05-26 14:46:10,702 - BSEIndexFeed - INFO - Index found: 65 - BSE100
+2025-05-26 14:46:10,702 - BSEIndexFeed - INFO - Index found: 66 - BSE200
+2025-05-26 14:46:10,703 - BSEIndexFeed - INFO - Index found: 67 - BSE500
+2025-05-26 14:46:10,704 - BSEIndexFeed - INFO - Index found: 68 - AUTO
+2025-05-26 14:46:10,706 - BSEIndexFeed - INFO - Index found: 69 - BANKEX
+2025-05-26 14:46:10,707 - BSEIndexFeed - INFO - Index found: 70 - BSE CD
+2025-05-26 14:46:10,707 - BSEIndexFeed - INFO - Index found: 71 - BSE CG
+2025-05-26 14:46:10,708 - BSEIndexFeed - INFO - Index found: 72 - BSEFMC
+2025-05-26 14:46:10,708 - BSEIndexFeed - INFO - Index found: 73 - BSE HC
+2025-05-26 14:46:10,709 - BSEIndexFeed - INFO - Index found: 74 - BSE IT
+2025-05-26 14:46:10,709 - BSEIndexFeed - INFO - Index found: 75 - METAL
+2025-05-26 14:46:10,710 - BSEIndexFeed - INFO - Index found: 76 - OILGAS
+2025-05-26 14:46:10,710 - BSEIndexFeed - INFO - Index found: 77 - POWER
+2025-05-26 14:46:10,711 - BSEIndexFeed - INFO - Index found: 78 - BSEPSU
+2025-05-26 14:46:10,711 - BSEIndexFeed - INFO - Index found: 79 - REALTY
+2025-05-26 14:46:10,712 - BSEIndexFeed - INFO - Index found: 80 - TECK
+2025-05-26 14:46:10,712 - BSEIndexFeed - INFO - Index found: 81 - BSEQUI
+2025-05-26 14:46:10,712 - BSEIndexFeed - INFO - Index found: 82 - SMLCAP
+2025-05-26 14:46:10,713 - BSEIndexFeed - INFO - Index found: 83 - SENSEX50
+2025-05-26 14:46:10,714 - BSEIndexFeed - INFO - Index found: 84 - ALLCAP
+2025-05-26 14:46:10,714 - BSEIndexFeed - INFO - Index found: 85 - INFRA
+2025-05-26 14:46:10,714 - BSEIndexFeed - INFO - Index found: 86 - CPSE
+2025-05-26 14:46:10,715 - BSEIndexFeed - INFO - Index found: 87 - MFG
+2025-05-26 14:46:10,715 - BSEIndexFeed - INFO - Index found: 88 - UTILS
+2025-05-26 14:46:10,715 - BSEIndexFeed - INFO - Index found: 89 - TELCOM
+2025-05-26 14:46:10,716 - BSEIndexFeed - INFO - Index found: 90 - SMLSEL
+2025-05-26 14:46:10,716 - BSEIndexFeed - INFO - Index found: 91 - BASMTR
+2025-05-26 14:46:10,717 - BSEIndexFeed - INFO - Index found: 92 - ENERGY
+2025-05-26 14:46:10,717 - BSEIndexFeed - INFO - Index found: 93 - FIN
+2025-05-26 14:46:10,717 - BSEIndexFeed - INFO - Index found: 94 - LRGCAP
+2025-05-26 14:46:10,718 - BSEIndexFeed - INFO - Index found: 95 - MIDSEL
+2025-05-26 14:46:10,718 - BSEIndexFeed - INFO - Index found: 96 - CDGS
+2025-05-26 14:46:10,719 - BSEIndexFeed - INFO - Index found: 97 - INDSTR
+2025-05-26 14:46:10,745 - BSEIndexFeed - INFO - Starting BSE Index Feed for 60 indices
+2025-05-26 14:46:10,748 - BSEIndexFeed - INFO - Connecting to BSE Index WebSocket...
+2025-05-26 14:46:34,692 - BSEIndexFeed - INFO - Shutting down by user request
+2025-05-26 14:46:34,696 - BSEIndexFeed - INFO - BSE Index Feed stopped
