@@ -11,7 +11,7 @@ class DhanClient:
     def __init__(self):
         self.logger = logging.getLogger('DhanClient')
         self.client_id = os.getenv('DHAN_CLIENT_ID', '1106727953')
-        self.access_token = os.getenv('DHAN_ACCESS_TOKEN', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzUwMzk0OTQzLCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwNjcyNzk1MyJ9.tZNT1IquegPKp8efsudUbw4Ng6mk0Rf6e_zjcE_5M842st1eaXt3maEs8Lx_EDePjyG1gkh0K7O5QpkZirLHTA')
+        self.access_token = os.getenv('DHAN_ACCESS_TOKEN', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzUxNDI5ODc3LCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwNjcyNzk1MyJ9.Sw-V7-Qy-abQE4q83kz0PxUpHXjuwed_uvGP1LpTovMMYKWvbPD7C2HdJmn0HMjDtNNaIGjdQuLNWbg7deI_1w')
         self.mongo_client = MongoClient(os.getenv('MONGO_URI', 'mongodb://localhost:27017'))
         self.db = self.mongo_client['Upholic']
         self.collection = self.db['live_data']

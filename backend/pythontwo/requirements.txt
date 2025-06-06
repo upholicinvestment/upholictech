@@ -2,4 +2,5 @@
 requests
 pymongo
 python-dotenv
+pandas
 # "@

@@ -8,11 +8,11 @@ from dhanhq import marketfeed
 # Suppress warnings
 warnings.filterwarnings('ignore', message='Columns.*have mixed types')
 
-class DhanNSEFNOFeed:
+class NSEFNOFeed:
     def __init__(self):
         # Load config from environment
         self.client_id = os.getenv('DHAN_CLIENT_ID', '1106727953')
-        self.access_token = os.getenv('DHAN_ACCESS_TOKEN', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzUwMzk0OTQzLCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwNjcyNzk1MyJ9.tZNT1IquegPKp8efsudUbw4Ng6mk0Rf6e_zjcE_5M842st1eaXt3maEs8Lx_EDePjyG1gkh0K7O5QpkZirLHTA')
+        self.access_token = os.getenv('DHAN_ACCESS_TOKEN', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzUxNDI5ODc3LCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwNjcyNzk1MyJ9.Sw-V7-Qy-abQE4q83kz0PxUpHXjuwed_uvGP1LpTovMMYKWvbPD7C2HdJmn0HMjDtNNaIGjdQuLNWbg7deI_1w')
         self.mongo_uri = os.getenv('MONGO_URI', 'mongodb://localhost:27017')
         self.mongo_client = MongoClient(self.mongo_uri)
         self.db = self.mongo_client['Upholic']
@@ -37,7 +37,7 @@ class DhanNSEFNOFeed:
 
             fno_df = df[
                 (df['SEM_EXM_EXCH_ID'] == 'NSE') &
-                (df['SEM_INSTRUMENT_NAME'].isin(['FUTIDX', 'FUTSTK', 'OPTIDX', 'OPTSTK']))
+                (df['SEM_INSTRUMENT_NAME'].isin(['FUTSTK', 'OPTSTK']))
             ].copy()
 
             if fno_df.empty:
@@ -83,7 +83,7 @@ class DhanNSEFNOFeed:
         print("\nInstrument Type Distribution:")
         print(df['instrument_type'].value_counts())
 
-        for inst_type in ['FUTIDX', 'FUTSTK', 'OPTIDX', 'OPTSTK']:
+        for inst_type in ['FUTSTK', 'OPTSTK']:
             if inst_type in df['instrument_type'].values:
                 print(f"\n{inst_type} Instruments:")
                 subset = df[df['instrument_type'] == inst_type]
@@ -149,5 +149,5 @@ class DhanNSEFNOFeed:
 
 
 if __name__ == "__main__":
-    feed = DhanNSEFNOFeed()
+    feed = NSEFNOFeed()
     feed.run()
